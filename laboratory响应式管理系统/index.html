@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 设置响应式布局,设置自适应 initial-scale(缩放比例),user-scalable(是否允许用户缩放)-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" >
+	<title>Document</title>
+	<!-- 引入bootstrap框架 -->
+	<link href="./images/logo.ico" rel="icon">
+	<link rel="stylesheet" href="style/bootstrap.css">
+	<link rel="stylesheet" href="style/style.css">
+	<script src="js/jquery-3.0.0.js"></script><!-- jquery库必须在加载bootstrap.min.js之前载入 -->
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+
+	</style>
+</head>
+<body>
+
+	<!-- 开始头部 -->
+	<div class="header">
+		<div class="container">
+			<img class="img-responsive center-block" src="./images/top_head.png" alt="" />
+		</div>
+	</div>
+	<!-- 结束头部-->
+
+	<!-- 开始导航条 -->
+	<div class="nav">
+		<div class="container">
+			<div class="navbar navbar-default" role="navigation">
+				<div class="navbar-header"><!-- header只允许a与button这两个元素 -->
+					<a class="navbar-toggle" data-toggle="collapse" href="#menu">
+						<span class="icon-bar"></span><!-- 横杆 -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a><!-- 在手机页面下控制以下菜单 -->
+				</div>
+
+				<div id="menu" class="navbar-collapse collapse"><!-- 折叠菜单（默认折叠） -->
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" href="#">实验室概况 <span class="caret"></span><!-- 小三角 --></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">英特尔产品</a></li>
+								<li class="divider"></li>
+								<li><a href="#">热点话题</a></li>
+								<li class="divider"></li>
+								<li><a href="#">用户</a></li>
+								<li class="divider"></li>
+								<li><a href="#">购买</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" href="#">研究方向 <span class="caret"></span><!-- 小三角 --></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">英特尔产品</a></li>
+								<li class="divider"></li>
+								<li><a href="#">热点话题</a></li>
+								<li class="divider"></li>
+								<li><a href="#">用户</a></li>
+								<li class="divider"></li>
+								<li><a href="#">购买</a></li>
+								<li class="divider"></li>
+								<li><a href="#">产品支持</a></li>
+								<li class="divider"></li>
+								<li><a href="#">关于英特尔</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" href="#">研究队伍 <span class="caret"></span><!-- 小三角 --></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">英特尔产品</a></li>
+								<li class="divider"></li>
+								<li><a href="#">热点话题</a></li>
+								<li class="divider"></li>
+								<li><a href="#">用户</a></li>
+								<li class="divider"></li>
+								<li><a href="#">购买</a></li>
+								<li class="divider"></li>
+								<li><a href="#">产品支持</a></li>
+								<li class="divider"></li>
+								<li><a href="#">关于英特尔</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" href="#">科研成果 <span class="caret"></span><!-- 小三角 --></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">英特尔产品</a></li>
+								<li class="divider"></li>
+								<li><a href="#">热点话题</a></li>
+								<li class="divider"></li>
+								<li><a href="#">用户</a></li>
+								<li class="divider"></li>
+								<li><a href="#">购买</a></li>
+								<li class="divider"></li>
+								<li><a href="#">产品支持</a></li>
+								<li class="divider"></li>
+								<li><a href="#">关于英特尔</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" href="#">开放基金 <span class="caret"></span><!-- 小三角 --></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">英特尔产品</a></li>
+								<li class="divider"></li>
+								<li><a href="#">热点话题</a></li>
+								<li class="divider"></li>
+								<li><a href="#">用户</a></li>
+								<li class="divider"></li>
+								<li><a href="#">购买</a></li>
+								<li class="divider"></li>
+								<li><a href="#">产品支持</a></li>
+								<li class="divider"></li>
+								<li><a href="#">关于英特尔</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 结束导航条 -->
+
+	<!-- 开始banner -->
+	<div class="banner">
+		<div class="container">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="./images/banner1.png" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="./images/banner2.png" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="./images/banner3.png" alt="Third slide">
+					</div>
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel"
+				data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel"
+				data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 结束banner -->
+
+	<!-- 开始主题部分 -->
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pull-left">
+						<h3>通知公告</h3>
+					</div>
+					<div class="pull-right">
+						<h3 style="font-size:17px;"><a href="###">更多<span class="glyphicon glyphicon-chevron-right"></span></a></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="media">
+						<div class="pull-left notice_time">
+							<h2 class="">13</h2>
+							<span class="">2016.11</span>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">2017年物理与能源学院硕博连读选拔结果公示</h4>
+							根据《关于做好2017 年硕博连读生选拔工作的通知》（师大研〔2016〕37 号）、《福建师范大学优秀全日制学术学位硕士研究生连续攻读博士学位工作实施办法(修订)......
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="media">
+						<div class="pull-left notice_time">
+							<h2 class="">13</h2>
+							<span class="">2016.11</span>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">2017年物理与能源学院硕博连读选拔结果公示</h4>
+							根据《关于做好2017 年硕博连读生选拔工作的通知》（师大研〔2016〕37 号）、《福建师范大学优秀全日制学术学位硕士研究生连续攻读博士学位工作实施办法(修订)......
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 hidden-sm hidden-xs">
+					<div class="media">
+						<div class="pull-left notice_time">
+							<h2 class="">13</h2>
+							<span class="">2016.11</span>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">2017年物理与能源学院硕博连读选拔结果公示</h4>
+							根据《关于做好2017 年硕博连读生选拔工作的通知》（师大研〔2016〕37 号）、《福建师范大学优秀全日制学术学位硕士研究生连续攻读博士学位工作实施办法(修订)......
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div style="background:#b3b3b3;width:100%;height:1px;margin-top:40px;margin-bottom:20px;"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<h3>学院动态</h3>
+					<div class="line" style="background:#5c307d;"></div>
+					<ul class="list-unstyled list">
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<p class="more">
+              <a href="#">更多<span class="glyphicon glyphicon-chevron-right"></a>
+            </p>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<h3>科研信息</h3>
+					<div class="line" style="background:#e0823d;"></div>
+					<ul class="list-unstyled list">
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<p class="more">
+              <a href="#">更多<span class="glyphicon glyphicon-chevron-right"></a>
+            </p>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<h3>团学信息</h3>
+					<div class="line" style="background:#79092a;"></div>
+					<ul class="list-unstyled list">
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<p class="more">
+              <a href="#">更多<span class="glyphicon glyphicon-chevron-right"></a>
+            </p>
+					</ul>
+				</div>
+				<div class="col-xs-12 hidden-sm col-md-4">
+					<h3>招生信息</h3>
+					<div class="line" style="background:#5c307d;"></div>
+					<ul class="list-unstyled list">
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span><a href="###">运动健儿驰骋赛场，物能学子青春飞扬——记物理与能源学院2016年校运会征程</a></li>
+						<p class="more">
+              <a href="#">更多<span class="glyphicon glyphicon-chevron-right"></a>
+            </p>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<h3>学术活动</h3>
+					<div class="line" style="background:#e0823d;"></div>
+					<div class="media">
+						<div class="pull-left activity_time">
+							<h2 class="">13</h2>
+							<span class="">2016.11</span>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">量子力学佯谬及后…</h4>
+							<p>时间: 15:00</p>
+							<p>地点: 地点：旗山校区理工实验楼3#102</p>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left activity_time">
+							<h2 class="">13</h2>
+							<span class="">2016.11</span>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">量子力学佯谬及后…</h4>
+							<p>时间: 15:00</p>
+							<p>地点: 地点：旗山校区理工实验楼3#102</p>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left activity_time">
+							<h2 class="">13</h2>
+							<span class="">2016.11</span>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">量子力学佯谬及后…</h4>
+							<p>时间: 15:00</p>
+							<p>地点: 地点：旗山校区理工实验楼3#102</p>
+						</div>
+						<p class="more">
+              <a href="#">更多<span class="glyphicon glyphicon-chevron-right"></a>
+            </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 结束主题部分 -->
+
+	<!-- 开始link-->
+	<div class="link">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8">
+					<h3>常用链接</h3>
+					<div style="background:#b3b3b3;width:100%;height:1px;margin-top:20px;margin-bottom:10px;"></div>
+					<div class="row">
+						<div class="col-xs-4">
+							<ul class="list-unstyled list">
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+							</ul>
+						</div>
+						<div class="col-xs-4">
+							<ul class="list-unstyled list">
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+							</ul>
+						</div>
+						<div class="col-xs-4">
+							<ul class="list-unstyled list">
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="###">师大首页<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4" style="margin-top:40px;">
+					<div class="row">
+						<div class=col-xs-6>
+							<img class="img-responsive center-block" src="./images/11.png" alt="" />
+						</div>
+						<div class=col-xs-6>
+							<img class="img-responsive center-block" src="./images/11.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 结束link -->
+
+	<!-- 开始footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<ul class="list-unstyled list">
+					<li>福建师范大学旗山校区理工楼五层（350117） 福建省量子调控与新能源材料重点实验室</li>
+					<li>福建师范大学物理与能源学院版权所有</li>
+					<li>福建省量子调控与新能源材料重点实验室Fujian Provincial Key Laboratory of Quantum Manipulation and New Energy Materials</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 结束footer -->
+
+	<!-- begin快速上下置顶 -->
+	<div id="updown"><span class="up"></span><span class="down"></span></div>
+	<script type="text/javascript">
+		$(function(){
+			$(window).scroll(function() {
+				if($(window).scrollTop() >= 200){
+					$('#updown').fadeIn(300);
+				}else{
+					$('#updown').fadeOut(300);
+				}
+			});
+			$('#updown .up').click(function(){$('html,body').animate({scrollTop: '0px'}, 600);});
+			$('#updown .down').click(function(){$('html,body').animate({scrollTop: document.body.clientHeight+'px'}, 600);});
+		});
+	</script>
+	<!-- end快速上下置顶 -->
+
+	<script type="text/javascript">
+		$(function(){
+			$('#myCarousel').carousel({
+				interval: 3000
+			})
+		})
+	</script>
+
+</body>
+</html>
